@@ -1,0 +1,50 @@
+
+@media screen and (min-width: 961px)
+{
+.body{
+    background-color: royalblue;
+
+}
+}
+
+@media all and (min-width: 401px) and (max-width: 960px)
+{
+.body{
+    background-color: khaki;
+    
+}
+}
+
+body{
+    background-color: darkred;   
+}
+.header{
+    background-color: deepskyblue;
+}
+.content{
+    background-color: gainsboro;
+}
+.sign-up{
+    background-color: lightblue;
+}
+.feature{
+    background-color: lightsalmon;
+}
+.feature2{
+    background-color: tomato;
+}
+.feature3{
+    background-color: slateblue;
+}
+.section menu{
+    margin-top: 20px;
+}
+
+
+.section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
