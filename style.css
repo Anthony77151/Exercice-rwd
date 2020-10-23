@@ -1,50 +1,122 @@
-
-@media screen and (min-width: 961px)
-{
-.body{
-    background-color: royalblue;
-
-}
-}
-
-@media all and (min-width: 401px) and (max-width: 960px)
-{
-.body{
-    background-color: khaki;
-    
-}
-}
-
 body{
     background-color: darkred;   
 }
-.header{
-    background-color: deepskyblue;
-}
-.content{
-    background-color: gainsboro;
-}
-.sign-up{
-    background-color: lightblue;
-}
-.feature{
-    background-color: lightsalmon;
-}
-.feature2{
-    background-color: tomato;
-}
-.feature3{
-    background-color: slateblue;
-}
-.section menu{
-    margin-top: 20px;
-}
-
-
-.section
-{
+.page {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .menu {
+    background-color: red;
+    height: 30px;
+  }
+  
+  .content {
+    background-color: blue;
+  }
+  .sign-up {
+    background-color: chocolate;
+  }
+  
+  .feature-1 {
+    background-color: cyan;
+  }
+  .feature-2 {
+    background-color: darkgrey;
+  }
+  .feature-3 {
+    background-color: darksalmon;
+  }
+  .header {
+    background-color: dodgerblue;
+  }
+  .menu {
+    flex-basis: 100%;
+  }
+  
+  .header {
+    flex-basis: 100%;
+  }
+  .content {
+    flex-basis: 100%;
+  }
+  .sign-up {
+    flex-basis: 100%;
+  }
+  
+  .feature-1 {
+    flex-basis: 100%;
+  }
+  .feature-2 {
+    flex-basis: 100%;
+  }
+  .feature-3 {
+    flex-basis: 100%;
+  }
+
+  @media screen and (min-width: 400px) {
+    .body{
+        background-color: khaki;
+        
+    }
+    .menu {
+      flex-basis: 100%;
+    }
+  
+    .header {
+      flex-basis: 100%;
+    }
+    .content {
+      flex-basis: 100%;
+    }
+    .sign-up {
+      flex-basis: 50%;
+    }
+  
+    .feature-1 {
+      flex-basis: 50%;
+    }
+    .feature-2 {
+      flex-basis: 50%;
+    }
+    .feature-3 {
+      flex-basis: 50%;
+    }
+  }
+  
+  @media screen and (min-width: 960px) {
+    .body{
+        background-color: royalblue;
+    }
+    .menu {
+      flex-basis: 100%;
+    }
+  
+    .header {
+      flex-basis: 100%;
+      order: 1;
+    }
+    .content {
+      flex-basis: 100%;
+      order: 4;
+    }
+    .sign-up {
+      flex-basis: 100%;
+      order: 3;
+    }
+  
+    .feature-1 {
+      flex-basis: 33.33%;
+      order: 2;
+    }
+    .feature-2 {
+      flex-basis: 33.33%;
+      order: 2;
+    }
+    .feature-3 {
+      flex-basis: 33.33%;
+      order: 2;
+    }
+  }
